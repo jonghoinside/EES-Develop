@@ -213,7 +213,7 @@ Completed 수신
 ### 프로시저 / 함수 호출 목록
 
 | # | 이름 | 종류 | 호출 시점 | 실패 시 |
-|:--|:---|:---|:---|:---|
+|:--|:---|:----|:---|:---|
 | 1 | `SP_SFA_ODS_ARRIVE_TOTE_PRC` | 프로시저 | ODS Ready 수신 (on_ready_source) | 400 반환 |
 | 2 | `SP_SFA_ODS_WORK_FINISH_PRC` | 프로시저 | ODS Completed 수신 (auto만) | 400 반환 |
 | 3 | `SP_TSK_CORE_ORD_WORK_RESULT_PRC` | 프로시저 | WORK_FINISH 직후 (auto만), PI_PARAMS=`"station_id\|barcode"` | 400 반환 |
