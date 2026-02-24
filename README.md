@@ -213,10 +213,10 @@ Completed 수신
 ### 프로시저 / 함수 호출 목록
 
 | # | 이름 | 종류 | 호출 시점 | 실패 시 |
-|:--|:---|:----|:---|:---|
-| 1 | `SP_SFA_ODS_ARRIVE_TOTE_PRC` | 프로시저 | ODS Ready 수신 (on_ready_source) | 400 반환 |
-| 2 | `SP_SFA_ODS_WORK_FINISH_PRC` | 프로시저 | ODS Completed 수신 (auto만) | 400 반환 |
-| 3 | `SP_TSK_CORE_ORD_WORK_RESULT_PRC` | 프로시저 | WORK_FINISH 직후 (auto만), PI_PARAMS=`"station_id\|barcode"` | 400 반환 |
+|:--|:---|:---|:---|:---|
+| 1 | `SP_SFA_ODS_ARRIVE_TOTE_PRC` | '프로시저' | ODS Ready 수신 (on_ready_source) | 400 반환 |
+| 2 | `SP_SFA_ODS_WORK_FINISH_PRC` | '프로시저' | ODS Completed 수신 (auto만) | 400 반환 |
+| 3 | `SP_TSK_CORE_ORD_WORK_RESULT_PRC` | '프로시저' | WORK_FINISH 직후 (auto만), PI_PARAMS=`"station_id\|barcode"` | 400 반환 |
 | 4 | `SP_SFA_ODS_MAPPING_TARGET_TOTE_PRC` | 프로시저 | ODS 폴링 시 각 row별 (채널 매핑 전) | API 중단 |
 | 5 | `XX_SFA_FN_ITEM_PICK_DURATION_SEC` | 함수 | ODS Ready 수신 (auto만, pickup_time 조회) | default 5.0s |
 
